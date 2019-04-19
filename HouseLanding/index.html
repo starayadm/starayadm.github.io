@@ -30,19 +30,19 @@
 				<ul class="social-media">
 
 					<li class="social-item"><a href="#" class="social-link" title="Вконтакте">
-							<svg class="social-img">
+							<svg class="social-img" aria-hidden="true">
 								<use xlink:href="./img/svg-use/sprite.svg#vk"></use>
 							</svg>
 						</a></li>
 
 					<li class="social-item"><a href="#" class="social-link" title="Facebook">
-							<svg class="social-img">
+							<svg class="social-img" aria-hidden="true">
 								<use xlink:href="./img/svg-use/sprite.svg#fb"></use>
 							</svg>
 						</a></li>
 
 					<li class="social-item"><a href="#" class="social-link" title="Telegram">
-							<svg class="social-img">
+							<svg class="social-img" aria-hidden="true">
 								<use xlink:href="./img/svg-use/sprite.svg#telegram"></use>
 							</svg>
 						</a></li>
@@ -53,7 +53,26 @@
 
 					<a href="tel:+79270176874" class="contacts__phone">7 927 017 68 74</a>
 
-					<a href="#" class="contacts__call">заказать звонок</a>
+					<a href="#form" class="contacts__call">заказать звонок</a>
+
+					<div class="hidden">
+						<form id="form" class="form">
+
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="HouseLanding">
+							<input type="hidden" name="admin_email" value="kustova-la@mail.ru">
+							<input type="hidden" name="form_subject" value="Заказ обратного звонка">
+							<!-- END Hidden Required Fields -->
+
+							<p class="form__title">Оставьте Ваши имя и телефон. Мы перезвоним Вам в течение 15 минут.</p>
+
+							<input type="text" name="name" placeholder="Ваше имя" class="form__input" required><br>
+							<input type="tel" name="phone" placeholder="Ваш телефон" class="form__input" required><br>
+
+							<button type="submit" class="form__btn">Отправить</button>
+
+						</form>
+					</div>
 
 				</div>
 
@@ -78,7 +97,7 @@
 					<p class="hero__subtitle">Сборные дома&nbsp;&mdash;это минимальные затраты, максимально короткие сроки сборки,
 						и&nbsp;высокая прочность строения</p>
 
-					<button class="btn">Скачать каталог</button>
+					<button type="button" class="btn">Скачать каталог</button>
 
 				</div>
 
@@ -159,7 +178,8 @@
 
 					<picture>
 						<source data-srcset="./img/man@2x.png 2x, ./img/man.png 1x">
-						<img data-src="./img/man.png" alt="Мужчина улыбается и пьет чай" class="feature-block__img responsive-img lazy">
+						<img data-src="./img/man.png" alt="Мужчина улыбается и пьет чай"
+							class="feature-block__img responsive-img lazy">
 					</picture>
 
 				</div>
@@ -178,6 +198,53 @@
 					</picture>
 
 				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="video">
+
+		<div class="container">
+
+			<div class="flex-container">
+
+				<div class="video__content">
+
+					<h2 class="video__title"><span>Посмотрите</span> видео о&nbsp;нас</h2>
+
+					<p class="video__subtitle">Для вас мы&nbsp;сняли небольшой фильм о&nbsp;том, как мы&nbsp;строим лучшие дома
+						в&nbsp;России</p>
+
+					<div class="btn-container">
+
+						<a href="https://www.youtube.com/watch?v=NeQM1c-XCDc" target="_blank" rel="noopener noreferrer"
+							class="video__btn" aria-label="Посмотреть видео">
+							<svg class="video__icon" aria-hidden="true">
+								<linearGradient id="ba" gradientUnits="userSpaceOnUse" x1="12" y1="32" x2="12" y2=".034">
+									<stop offset="0" />
+									<stop offset="0" stop-color="#20606a" />
+									<stop offset="1" stop-color="#348997" />
+								</linearGradient>
+								<use xlink:href="./img/svg-use/sprite.svg#play"></use>
+							</svg>
+						</a>
+
+						<span aria-hidden="true"></span>
+
+					</div>
+
+					<a href="https://www.youtube.com/watch?v=NeQM1c-XCDc" target="_blank" rel="noopener noreferrer"
+						class="video__link">Посмотреть видео</a>
+
+				</div>
+
+				<picture class="video__pic">
+					<source data-srcset="./img/man-2@2x.png 2x, ./img/man-2.png 1x">
+					<img data-src="./img/man-2.png" alt="Мужчина-рабочий" class="video__img lazy">
+				</picture>
 
 			</div>
 
