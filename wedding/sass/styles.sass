@@ -198,13 +198,9 @@ picture
 
 .hero
 	margin-bottom: rem(25)
-	// background-image: url("../img/bg/@1x/1-900.jpg")
-	// @include respond-at(900px)
-	// 	background-image: url("../img/bg/@1x/1-1920.jpg")
-	// @include retina(320)
-	// 	background-image: url("../img/bg/@1x/1-900@2x.jpg")
-	// @include retina(900)
-	// 	background-image: url("../img/bg/@2x/1-1920@2x.jpg")
+	background-image: url("../img/bg/@1x/1-900.jpg")
+	@include respond-at(900px)
+		background-image: url("../img/bg/@1x/1-1920.jpg")
 
 .hero__content
 	max-width: rem(300)
@@ -519,8 +515,6 @@ picture
 	background-color: $lavender
 	@include respond-at(1024px)
 		background-image: url("../img/bg/@1x/3-1920.jpg")
-	// @include retina(1024)
-	// 	background-image: url("../img/bg/@2x/3-1920@2x.jpg")
 	&::after
 		opacity: 0
 		@include respond-at(1024px)
@@ -593,10 +587,6 @@ picture
 		background-image: none
 	@include respond-at(1440px)
 		right: 12%
-	// @include retina(320)
-	// 	background-image: url("../img/bg/@1x/3-900@2x.jpg")
-	// @include retina(1024)
-	// 	background-image: none
 	&::after
 		position: absolute
 		top: 0
@@ -623,13 +613,9 @@ picture
 // Section-4
 
 .organization
-	// background-image: url("../img/bg/@1x/4-900.jpg")
-	// @include respond-at(900px)
-	// 	background-image: url("../img/bg/@1x/4-1920.jpg")
-	// @include retina(320)
-	// 	background-image: url("../img/bg/@1x/4-900@2x.jpg")
-	// @include retina(900)
-	// 	background-image: url("../img/bg/@2x/4-1920@2x.jpg")
+	background-image: url("../img/bg/@1x/4-900.jpg")
+	@include respond-at(900px)
+		background-image: url("../img/bg/@1x/4-1920.jpg")
 
 .organization
 	.h2

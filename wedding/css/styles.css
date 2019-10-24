@@ -253,7 +253,11 @@ picture {
     border-radius: 1.875rem; }
 
 .hero {
-  margin-bottom: 1.5625rem; }
+  margin-bottom: 1.5625rem;
+  background-image: url("../img/bg/@1x/1-900.jpg"); }
+  @media only screen and (min-width: 900px) {
+    .hero {
+      background-image: url("../img/bg/@1x/1-1920.jpg"); } }
 
 .hero__content {
   max-width: 18.75rem;
@@ -712,6 +716,12 @@ picture {
   @media only screen and (min-width: 1920px) {
     .about__img {
       width: 100%; } }
+
+.organization {
+  background-image: url("../img/bg/@1x/4-900.jpg"); }
+  @media only screen and (min-width: 900px) {
+    .organization {
+      background-image: url("../img/bg/@1x/4-1920.jpg"); } }
 
 .organization .h2 {
   max-width: 17.5rem;
